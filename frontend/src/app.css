@@ -1,0 +1,157 @@
+:root {
+    --font-sans: Avenir, Helvetica, Arial, sans-serif;
+}
+
+#app {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+}
+* {
+    box-sizing: border-box;
+    /* outline: 1px solid tomato; */
+}
+
+#app,
+.button,
+input,
+textarea,
+select {
+    font-family: var(--font-sans);
+}
+
+a { color: darkslategray; }
+a:hover { color: cadetblue; }
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Navigation */
+#nav {
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#nav img {
+    height: 2rem;
+    width: 2rem;
+    display: block;
+}
+
+#nav a {
+    font-weight: bold;
+    display: inline-block;
+    padding: 1rem .5rem;
+    text-decoration: none;
+}
+
+#nav a.router-link-exact-active {
+    text-decoration: underline;
+}
+
+/* Forms and buttons */
+.button,
+button.button,
+a.button {
+    background-color: #2c3e50;
+    border: 1px solid transparent;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button:hover {
+    opacity: .8;
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+.button.button-outline {
+    border: 1px solid #2c3e50;
+    background-color: transparent;
+    color: #2c3e50;
+}
+
+.button.button-danger {
+    background-color: brown;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th,
+table td {
+    text-align: left;
+    padding: .5rem 1rem;
+}
+
+
+th {
+    border-bottom: 1px solid #2c3e50;
+}
+
+tfoot td {
+    /* border-top: 1px solid #2c3e50; */
+    font-weight: bold;
+}
+
+.label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: .33rem;
+    font-size: .9rem;
+}
+
+input:not([type="checkbox"], [type="submit"], [type="button"]),
+textarea {
+    border: 1px solid #2c3e5099;
+    border-radius: 3px;
+    padding: .33rem .5rem;
+    font-size: .9rem;
+    width: 100%;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #2c3e50;
+    outline: 3px solid #2c3e5077;
+}
+
+.checkbox-wrapper input {
+    cursor: pointer;
+}
+
+.checkbox-wrapper label {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: .25rem;
+}
+
+/* Alert */
+.alert {
+    background-color: #666;
+    color: white;
+    padding: 1rem;
+    border-radius: 12px;
+}
+.alert.alert-danger { background-color: indianred; }
+
+/* Panel */
+.panel {
+    background-color: whitesmoke;
+    border-radius: 12px;
+}
